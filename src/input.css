@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.depth-layer {
+    animation: zoomEffect 20s infinite ease-in-out;
+    will-change: transform, background-position;
+}
+
+@keyframes zoomEffect {
+    0%, 100% {
+        transform: translateZ(0) scale(1);
+        background-position: 50% 50%;
+    }
+    25% {
+        transform: translateZ(-200px) scale(1.0);
+        background-position: 100% 45%;
+    }
+    50% {
+        transform: translateZ(-200px) scale();
+        background-position: 40% 40%;
+    }
+    75% {
+        /* transform: translateZ(100px) scale(1.2); */
+        background-position: 45% 45%;
+    }
+}
