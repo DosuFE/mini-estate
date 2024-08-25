@@ -20,10 +20,10 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="">
+  <header>
     <!-- NAVIGATION BAR -->
-    <nav class="bg-slate-50 shadow-md shadow-slate-500
-    px-5 py-2 w-full flex items-center justify-between 
+    <nav class="bg-slate-50 sticky top-0 shadow-md shadow-slate-500
+    px-5 py-2 w-full flex items-center justify-between z-50
     md:py-4 lg:px-10 lg:py-5 xl:px-12
     ">
       <!-- ESTATE LOGO -->
@@ -97,7 +97,7 @@
         </div>
         
         <!-- MOBILE NAVIGATION LINKS -->
-        <nav class="ml-5 font-serif text-3xl font-medium  font-anek
+        <nav class="ml-5 font-serif text-2xl font-medium  font-anek
         sm:text-4xl">
           <ul class="flex flex-col gap-5">
             <li class="text-orange-500 hover:text-orange-700">
@@ -125,7 +125,7 @@
             </li>
 
             <button class="bg-orange-500 px-7 py-2 rounded-md 
-             hover:duration-700
+            hover:duration-700
             font-medium font-roboto hover:text-regal-blue hover:bg-slate-200
             duration-1000 outline-none hover:border-2 
             hover:border-orange-500">
@@ -141,7 +141,7 @@
     ">
       <!-- HERO SECTION CONTENT -->
       <div class="text-center bg-black 
-      pt-32 opacity-60 pb-20 md:pt-60 md:pb-40">
+      pt-32 opacity-60 pb-20 md:pt-60 md:pb-32">
         <!-- OUR PERFECT HOME -->
         <h1 class="text-xl text-white tracking-wider
         font-roboto font-medium uppercase md:text-5xl
@@ -156,29 +156,21 @@
         </p>
 
         <!-- FORM FOR SELLING AND RENTAGE -->
-        <form class="pt-5 font-anek">
-          <!-- SELLS & RENT TAB CONTAINER -->
-          <div class="flex items-center justify-center gap-3">
-            <button class="tab-btn active bg-white pt-3 px-10
-            font-medium text-2xl rounded-md hover:bg-orange-500 
-            hover:text-white hover:duration-700" data-id="history">
-              Sell
-            </button>
-            <button class="tab-btn bg-white pt-3 px-10
-            font-medium text-2xl rounded-md hover:bg-orange-500 
-            hover:text-white hover:duration-700" data-id="vision">
-              Rent
-            </button>
-          </div>
-
-          <!-- TAB FORM CONTENT -->
-          <div class="bg-white inline-block">
+        <form class="pt-5 font-Satoshi inline-block">
+          <!-- FORM CONTENT -->
+          <div class="bg-white flex flex-col items-center 
+          space-y-5 px-5 py-4 md:space-y-0
+          rounded-md md:flex-row md:space-x-4 lg:px-10 xl:px-16
+          xl:py-4
+          ">
             <!-- SELLS CONTENT -->
-            <div class="content active flex " id="history">
-              <label for="location" class="text-2xl">
-                Location
+            <div class="flex flex-row items-center gap-2
+            md:flex-col md:items-start md:gap-2">
+              <label for="location" class="text-2xl font-semibold cursor-pointer">
+                Location:
               </label>
-              <select name="country" id="location">
+              <select name="country" id="location" class="text-xl
+              border-2 border-black rounded-md hover:border-slate-300" required>
                 <option value="country">Indonesia</option>
                 <option value="country">Jakarta</option>
                 <option value="country">Jamaica</option>
@@ -187,25 +179,58 @@
             </div>
 
             <!-- RENT CONTENT -->
-            <div class="content flex " id="vision">
-              <label for="location" class="text-2xl">
-                Type
+            <div class="flex flex-row items-center gap-12
+            md:flex-col md:gap-2 md:items-start
+            ">
+              <label for="type" class="text-2xl font-semibold cursor-pointer">
+                Type:
               </label>
-              <select name="country" id="location">
-                <option value="country">Indonesia</option>
-                <option value="country">Jakarta</option>
-                <option value="country">Jamaica</option>
-                <option value="country">New Zealand</option>
+              <select name="country" id="type" class="text-xl font-medium px-2
+              border-2 border-black rounded-md hover:border-slate-300" required>
+                <option>Type 21/24</option>
+                <option>Type 23/34</option>
+                <option>Type 22/24</option>
+                <option>Type 21/24</option>
               </select>
             </div>
+
+            <!-- RANGE CONTENT -->
+            <div class="flex flex-row items-center gap-8
+            md:flex-col md:items-start md:gap-2
+            ">
+              <label for="range" class="text-2xl font-semibold cursor-pointer">
+                Range:
+              </label>
+              <select id="range" class="text-xl font-medium px-1
+              border-2 border-black rounded-md hover:border-slate-300" required>
+                <option>$106 - $948</option>
+                <option>$106 - $948</option>
+                <option>$106 - $948</option>
+                <option>$106 - $948</option>
+              </select>
+            </div>
+
+            <button type="submit"
+            class="bg-orange-500 w-full 
+            py-2 rounded-md text-3xl md:px-10 md:py-3
+            font-medium font-roboto hover:text-regal-blue 
+            hover:duration-700 hover:bg-slate-200
+            duration-1000 outline-none hover:border-2 
+            hover:border-orange-500 ">
+              Submit
+            </button>
           </div>
         </form>
       </div>
     </main>
   </header>
   
-
-
+  <!-- NEW LIST SECTION --> 
+  <section class="mt-52">
+    <main class="">
+      <h1>New List</h1>
+    </main>
+  </section>
 
 
 

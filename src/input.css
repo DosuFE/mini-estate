@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+	@font-face {
+		font-family: Satoshi;
+		src: url('/src/assets/Satoshi-Variable.ttf');
+	}
+}
+
 .depth-layer {
     animation: zoomEffect 20s infinite ease-in-out;
     will-change: transform, background-position;
