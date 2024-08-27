@@ -89,9 +89,9 @@
       duration-1000">
         <!-- CLOSE NAVIGATION MENU -->
         <div class="absolute top-2 left-1 mx-4 mt-5">
-          <button class="hover:text-slate-700">
+          <button class="text-white hover:text-slate-700">
             <a href="javascript:void(0)" onclick="exitNav()">
-              <ion-icon name="close-outline" class="text-5xl"></ion-icon>
+              <ion-icon name="close-outline" class="text-white text-5xl"></ion-icon>
             </a>
           </button>
         </div>
@@ -225,10 +225,205 @@
     </main>
   </header>
   
-  <!-- NEW LIST SECTION --> 
-  <section class="mt-52">
-    <main class="">
-      <h1>New List</h1>
+  <!-- NEWEST LISTING SECTION --> 
+  <section class="mt-10 lg:px-10 lg:mt-20">
+    <!-- NEWEST LISTING -->
+    <main>
+      <!-- NEWEST LISTING FLEX -->
+      <div class="px-3 py-2 flex items-center justify-between md:px-7
+      lg:px-0">
+        <h1 class="text-xl text-regal-blue
+        font-medium tracking-wide md:font-semibold
+        md:text-4xl
+        ">
+          Newest Listings
+        </h1>
+
+        <!-- VIEW ALL LINKS -->
+        <button type="button" class="text-white bg-orange-500
+        text-lg font-medium px-4 py-2 capitalize md:px-8 
+        rounded-md md:tracking-widest
+        ">
+          <a href="explore.html">
+            view all
+          </a>
+        </button>
+      </div>
+
+      <!-- LISTING HOUSE AVA -->
+      <div class="listing_container">
+        <!-- GRAND FAMILY HOUSE -->
+        <div class="overflow-hidden inline-block
+        bg-white shadow-md shadow-slate-400 p-3
+        rounded-2xl
+        ">
+          <!-- GRAND FAMILY HOUSE IMG -->
+          <div class="max-w-xs overflow-hidden rounded-xl">
+            <a href="">
+              <img 
+              src="./images/pool.png" 
+              alt="" class="cursor-pointer object-cover
+              transition duration-[2s] hover:scale-125
+              rounded-2xl h-[18.5rem] hover:brightness-75
+              "/>
+            </a>
+          </div>
+          <!-- GRAND FAMILY HOUSE TEXT -->
+          <h1 class="text-2xl font-semibold text-regal-blue py-2">
+            Grand family house
+          </h1>
+          <!-- GRAND FAMILY HOUSE LOCATION -->
+          <div class="flex items-center gap-2">
+            <ion-icon name="location" class="text-teal-700"></ion-icon>
+            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+              Ohio St. South Gate, California
+            </p>
+          </div>
+          <div class="flex items-center justify-between py-2">
+            <!-- GRAND FAMILY HOUSE AMOUNT -->
+            <p class="text-2xl text-regal-blue font-semibold ">
+              $350
+            </p>
+
+            <!-- GRAND FAMILY HOUSE RATINGS -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+              <p class="text-xl text-regal-blue font-semibold ">
+                4.8
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ELEMENT HOUSE -->
+        <div class="overflow-hidden inline-block
+        bg-white shadow-md shadow-slate-400 p-3
+        rounded-2xl
+        ">
+          <!-- ELEMENT HOUSE IMG -->
+          <div class="max-w-xs overflow-hidden rounded-xl">
+            <a href="">
+              <img 
+              src="./images/element-house.png" 
+              alt="" class="cursor-pointer object-cover
+              transition duration-[2s] hover:scale-125
+              rounded-2xl h-[18.5rem] hover:brightness-75
+              "/>
+            </a>
+          </div>
+          <!-- ELEMENT HOUSE TEXT -->
+          <h1 class="text-2xl font-semibold text-regal-blue py-2">
+            The Elements
+          </h1>
+          <!-- ELEMENT HOUSE LOCATION -->
+          <div class="flex items-center gap-2">
+            <ion-icon name="location" class="text-teal-700"></ion-icon>
+            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+              Jakarta Selatan, DKI Jakarta
+            </p>
+          </div>
+          <div class="flex items-center justify-between py-2">
+            <!-- ELEMENT HOUSE AMOUNT -->
+            <p class="text-2xl text-regal-blue font-semibold ">
+              $620
+            </p>
+
+            <!-- ELEMENT HOUSE RATINGS -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+              <p class="text-xl text-regal-blue font-semibold ">
+                4.8
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRIRAKSA VILLAGE 2 -->
+        <div class="overflow-hidden inline-block
+        bg-white shadow-md shadow-slate-400 p-3
+        rounded-2xl
+        ">
+          <!-- TRIRAKSA VILLAGE IMG -->
+          <div class="max-w-xs overflow-hidden rounded-xl">
+            <a href="">
+              <img 
+              src="./images/tritraksa.jpg" 
+              alt="" class="cursor-pointer object-cover
+              transition duration-[2s] hover:scale-125
+              rounded-2xl h-[18.5rem] hover:brightness-75
+              "/>
+            </a>
+          </div>
+          <!-- TRIRAKSA VILLAGE TEXT -->
+          <h1 class="text-2xl font-semibold text-regal-blue py-2">
+            TRIRAKSA VILLAGE 2
+          </h1>
+          <!-- TRIRAKSA VILLAGE LOCATION -->
+          <div class="flex items-center gap-2">
+            <ion-icon name="location" class="text-teal-700"></ion-icon>
+            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+              Tangerang, Banten
+            </p>
+          </div>
+          <div class="flex items-center justify-between py-2">
+            <!-- TRIRAKSA VILLAGE AMOUNT -->
+            <p class="text-2xl text-regal-blue font-semibold ">
+              $682
+            </p>
+
+            <!-- TRIRAKSA VILLAGE RATINGS -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+              <p class="text-xl text-regal-blue font-semibold ">
+                4.8
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NUVASA BAY -->
+        <div class="overflow-hidden inline-block
+        bg-white shadow-md shadow-slate-400 p-3
+        rounded-2xl
+        ">
+          <!-- ELEMENT HOUSE IMG -->
+          <div class="max-w-xs overflow-hidden rounded-xl">
+            <a href="">
+              <img 
+              src="./images/element-house.png" 
+              alt="" class="cursor-pointer object-cover
+              transition duration-[2s] hover:scale-125
+              rounded-2xl h-[18.5rem] hover:brightness-75
+              "/>
+            </a>
+          </div>
+          <!--NUVASA BAY TEXT -->
+          <h1 class="text-2xl font-semibold text-regal-blue py-2">
+            Navasa Bay
+          </h1>
+          <!-- ELEMENT HOUSE LOCATION -->
+          <div class="flex items-center gap-2">
+            <ion-icon name="location" class="text-teal-700"></ion-icon>
+            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+              Batam, Kepulauan Riau
+            </p>
+          </div>
+          <div class="flex items-center justify-between py-2">
+            <!-- ELEMENT HOUSE AMOUNT -->
+            <p class="text-2xl text-regal-blue font-semibold ">
+              $969
+            </p>
+
+            <!-- ELEMENT HOUSE RATINGS -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+              <p class="text-xl text-regal-blue font-semibold ">
+                4.8
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </section>
 
