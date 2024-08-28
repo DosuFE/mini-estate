@@ -58,3 +58,6 @@ about.addEventListener("click", function (e) {
     element.classList.add("active");
   }
 });
+
+
+// DREAM TEXT ACCORDION

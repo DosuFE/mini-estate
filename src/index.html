@@ -170,7 +170,7 @@
                 Location:
               </label>
               <select name="country" id="location" class="text-xl
-              border-2 border-black rounded-md hover:border-slate-300" required>
+              border-2 border-black rounded-md hover:border-slate-300" required="">
                 <option value="country">Indonesia</option>
                 <option value="country">Jakarta</option>
                 <option value="country">Jamaica</option>
@@ -186,7 +186,7 @@
                 Type:
               </label>
               <select name="country" id="type" class="text-xl font-medium px-2
-              border-2 border-black rounded-md hover:border-slate-300" required>
+              border-2 border-black rounded-md hover:border-slate-300" required="">
                 <option>Type 21/24</option>
                 <option>Type 23/34</option>
                 <option>Type 22/24</option>
@@ -202,7 +202,7 @@
                 Range:
               </label>
               <select id="range" class="text-xl font-medium px-1
-              border-2 border-black rounded-md hover:border-slate-300" required>
+              border-2 border-black rounded-md hover:border-slate-300" required="">
                 <option>$106 - $948</option>
                 <option>$106 - $948</option>
                 <option>$106 - $948</option>
@@ -210,8 +210,7 @@
               </select>
             </div>
 
-            <button type="submit"
-            class="bg-orange-500 w-full 
+            <button type="submit" class="bg-orange-500 w-full 
             py-2 rounded-md text-3xl md:px-10 md:py-3
             font-medium font-roboto hover:text-regal-blue 
             hover:duration-700 hover:bg-slate-200
@@ -226,7 +225,7 @@
   </header>
   
   <!-- NEWEST LISTING SECTION --> 
-  <section class="mt-10 lg:px-10 lg:mt-20">
+  <section class="mt-10 lg:px-8 lg:mt-20">
     <!-- NEWEST LISTING -->
     <main>
       <!-- NEWEST LISTING FLEX -->
@@ -251,177 +250,327 @@
       </div>
 
       <!-- LISTING HOUSE AVA -->
-      <div class="listing_container">
-        <!-- GRAND FAMILY HOUSE -->
-        <div class="overflow-hidden inline-block
-        bg-white shadow-md shadow-slate-400 p-3
-        rounded-2xl
-        ">
-          <!-- GRAND FAMILY HOUSE IMG -->
-          <div class="max-w-xs overflow-hidden rounded-xl">
-            <a href="">
-              <img 
-              src="./images/pool.png" 
-              alt="" class="cursor-pointer object-cover
-              transition duration-[2s] hover:scale-125
-              rounded-2xl h-[18.5rem] hover:brightness-75
-              "/>
-            </a>
-          </div>
-          <!-- GRAND FAMILY HOUSE TEXT -->
-          <h1 class="text-2xl font-semibold text-regal-blue py-2">
-            Grand family house
-          </h1>
-          <!-- GRAND FAMILY HOUSE LOCATION -->
-          <div class="flex items-center gap-2">
-            <ion-icon name="location" class="text-teal-700"></ion-icon>
-            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-              Ohio St. South Gate, California
-            </p>
-          </div>
-          <div class="flex items-center justify-between py-2">
-            <!-- GRAND FAMILY HOUSE AMOUNT -->
-            <p class="text-2xl text-regal-blue font-semibold ">
-              $350
-            </p>
-
-            <!-- GRAND FAMILY HOUSE RATINGS -->
+      <div class="flex flex-col gap-10 lg:gap-5 items-center justify-center
+      lg:flex-row 
+      ">
+        <div class="flex flex-col items-center justify-center gap-10 lg:gap-5 sm:flex-row ">
+          <!-- GRAND FAMILY HOUSE -->
+          <div class="overflow-hidden w-full 
+          bg-white shadow-md shadow-slate-400 p-3
+          rounded-2xl
+          ">
+            <!-- GRAND FAMILY HOUSE IMG -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Nuvasa-Bay.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <!-- GRAND FAMILY HOUSE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Grand family house
+            </h1>
+            <!-- GRAND FAMILY HOUSE LOCATION -->
             <div class="flex items-center gap-2">
-              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-              <p class="text-xl text-regal-blue font-semibold ">
-                4.8
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
               </p>
             </div>
-          </div>
-        </div>
-        
-        <!-- ELEMENT HOUSE -->
-        <div class="overflow-hidden inline-block
-        bg-white shadow-md shadow-slate-400 p-3
-        rounded-2xl
-        ">
-          <!-- ELEMENT HOUSE IMG -->
-          <div class="max-w-xs overflow-hidden rounded-xl">
-            <a href="">
-              <img 
-              src="./images/element-house.png" 
-              alt="" class="cursor-pointer object-cover
-              transition duration-[2s] hover:scale-125
-              rounded-2xl h-[18.5rem] hover:brightness-75
-              "/>
-            </a>
-          </div>
-          <!-- ELEMENT HOUSE TEXT -->
-          <h1 class="text-2xl font-semibold text-regal-blue py-2">
-            The Elements
-          </h1>
-          <!-- ELEMENT HOUSE LOCATION -->
-          <div class="flex items-center gap-2">
-            <ion-icon name="location" class="text-teal-700"></ion-icon>
-            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-              Jakarta Selatan, DKI Jakarta
-            </p>
-          </div>
-          <div class="flex items-center justify-between py-2">
-            <!-- ELEMENT HOUSE AMOUNT -->
-            <p class="text-2xl text-regal-blue font-semibold ">
-              $620
-            </p>
-
-            <!-- ELEMENT HOUSE RATINGS -->
-            <div class="flex items-center gap-2">
-              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-              <p class="text-xl text-regal-blue font-semibold ">
-                4.8
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
               </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- TRIRAKSA VILLAGE 2 -->
-        <div class="overflow-hidden inline-block
-        bg-white shadow-md shadow-slate-400 p-3
-        rounded-2xl
-        ">
-          <!-- TRIRAKSA VILLAGE IMG -->
-          <div class="max-w-xs overflow-hidden rounded-xl">
-            <a href="">
-              <img 
-              src="./images/tritraksa.jpg" 
-              alt="" class="cursor-pointer object-cover
-              transition duration-[2s] hover:scale-125
-              rounded-2xl h-[18.5rem] hover:brightness-75
-              "/>
-            </a>
-          </div>
-          <!-- TRIRAKSA VILLAGE TEXT -->
-          <h1 class="text-2xl font-semibold text-regal-blue py-2">
-            TRIRAKSA VILLAGE 2
-          </h1>
-          <!-- TRIRAKSA VILLAGE LOCATION -->
-          <div class="flex items-center gap-2">
-            <ion-icon name="location" class="text-teal-700"></ion-icon>
-            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-              Tangerang, Banten
-            </p>
-          </div>
-          <div class="flex items-center justify-between py-2">
-            <!-- TRIRAKSA VILLAGE AMOUNT -->
-            <p class="text-2xl text-regal-blue font-semibold ">
-              $682
-            </p>
-
-            <!-- TRIRAKSA VILLAGE RATINGS -->
+  
+          <!-- ELEMENT HOUSE  -->
+          <div class="overflow-hidden w-full 
+          bg-white shadow-md shadow-slate-400 p-3
+          rounded-2xl
+          ">
+            <!-- ELEMENT HOUSE IMG -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/blue-element.png"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <!-- ELEMENT HOUSE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              The Elements
+            </h1>
+            <!-- ELEMENT HOUSE LOCATION -->
             <div class="flex items-center gap-2">
-              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-              <p class="text-xl text-regal-blue font-semibold ">
-                4.8
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Jakarta Selatan, DKI Jakarta
               </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- ELEMENT HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $620
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- NUVASA BAY -->
-        <div class="overflow-hidden inline-block
-        bg-white shadow-md shadow-slate-400 p-3
-        rounded-2xl
-        ">
-          <!-- ELEMENT HOUSE IMG -->
-          <div class="max-w-xs overflow-hidden rounded-xl">
-            <a href="">
-              <img 
-              src="./images/element-house.png" 
-              alt="" class="cursor-pointer object-cover
-              transition duration-[2s] hover:scale-125
-              rounded-2xl h-[18.5rem] hover:brightness-75
-              "/>
-            </a>
-          </div>
-          <!--NUVASA BAY TEXT -->
-          <h1 class="text-2xl font-semibold text-regal-blue py-2">
-            Navasa Bay
-          </h1>
-          <!-- ELEMENT HOUSE LOCATION -->
-          <div class="flex items-center gap-2">
-            <ion-icon name="location" class="text-teal-700"></ion-icon>
-            <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-              Batam, Kepulauan Riau
-            </p>
-          </div>
-          <div class="flex items-center justify-between py-2">
-            <!-- ELEMENT HOUSE AMOUNT -->
-            <p class="text-2xl text-regal-blue font-semibold ">
-              $969
-            </p>
 
-            <!-- ELEMENT HOUSE RATINGS -->
+        <div class="flex flex-col items-center justify-center gap-10 lg:gap-5 sm:flex-row ">
+          <!-- Triraksa Village 2 -->
+          <div class="overflow-hidden w-full 
+          bg-white shadow-md shadow-slate-400 p-3
+          rounded-2xl
+          ">
+            <!-- Triraksa Village 2 -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/tritraksa.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <!-- Triraksa Village 2 TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Triraksa Village 2
+            </h1>
+            <!-- Triraksa Village 2 LOCATION -->
             <div class="flex items-center gap-2">
-              <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-              <p class="text-xl text-regal-blue font-semibold ">
-                4.8
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Tangerang, Banten
               </p>
             </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- Triraksa Village 2 AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $682
+              </p>
+  
+              <!-- Triraksa Village 2 RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
           </div>
+  
+          <!--Nuvasa Bay  -->
+          <div class="overflow-hidden w-full 
+          bg-white shadow-md shadow-slate-400 p-3
+          rounded-2xl
+          ">
+            <!-- Nuvasa Bay IMG -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Nuvasa-Bay.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <!-- Nuvasa Bay TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Nuvasa Bay
+            </h1>
+            <!-- Nuvasa Bay LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Batam, Kepulauan Riau
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- Nuvasa Bay AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $969
+              </p>
+  
+              <!-- Nuvasa Bay RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+
+  <!-- SECTION 2 FIND YOUR DREAM HOUSE -->
+  <section class="mt-10 md:mt-20">
+    <main class="flex flex-col items-center justify-center 
+    gap-7 lg:flex-row lg:px-6">
+      <!-- YOUR DREAM HOUSE  -->
+      <div class="px-4 flex flex-col items-center justify-center
+      gap-5 md:justify-start md:items-start
+      ">
+        <p class="text-regal-blue text-3xl text-center
+        font-semibold capitalize max-w-80 md:text-start
+        lg:text-4xl lg:max-w-96">
+          We help you to find your dream house
+        </p>
+        <img src="./images/dream-house.jpg" alt="Your Dream House "
+        class="w-full rounded-xl hover:duration-1000 hover:sepia"/>
+      </div>
+
+      <!-- YOUR DREAM TEXT & ACCORDION -->
+      <div class="px-1 flex flex-col items-start gap-10 md:gap-16">
+        <p class="px-3 text-[#6D6D6D] font-normal tracking-wide 
+        text-sm md:max-w-2xl lg:text-base md:px-0">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+
+        <!-- ARTICLES -->
+        <div class="flex flex-col items-center justify-start gap-8 px-4 md:px-0">
+          <!-- ARTICLE LIFE WARRANT -->
+          <article class="relative w-full bg-slate-50 rounded-xl
+            cursor-pointer">
+            <!-- input checkbox -->
+            <input type="checkbox" id="lifetime"
+            class="absolute peer opacity-0"/>
+            <!-- heading -->
+            <label for="lifetime"
+            class="tracking-wide mx-5
+            h-[50px] flex items-center text-base md:text-lg lg:text-xl font-semibold
+            text-regal-blue cursor-pointer">
+              Lifetime Warranty
+            </label>
+            <!-- arrow -->
+            <div class="absolute top-4 right-10
+            rotate-0 peer-checked:rotate-180
+            duration-700">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <!-- Content -->
+            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+              <p class="px-5 py-0 text-sm md:text-base tracking-wide leading-8">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              </p>
+            </div>
+          </article>
+
+          <!-- ARTICLE COMPETITORS -->
+          <article class="relative w-full bg-slate-50 rounded-xl
+            cursor-pointer">
+            <!-- input checkbox -->
+            <input type="checkbox" id="competitors"
+            class="absolute peer opacity-0"/>
+            <!-- heading -->
+            <label for="competitors"
+            class="tracking-wide mx-5 capitalize
+            h-[50px] flex items-center text-base md:text-lg lg:text-xl font-semibold
+            text-regal-blue cursor-pointer">
+            cheapest compared to other competitors
+            </label>
+            <!-- arrow -->
+            <div class="absolute top-4 right-10
+            rotate-0 peer-checked:rotate-180
+            duration-700">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <!-- Content -->
+            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+              <p class="px-5 py-0 text-sm md:text-base tracking-wide leading-8">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              </p>
+            </div>
+          </article>
+
+          <!-- ARTICLE LOCCATION-->
+          <article class="relative w-full bg-slate-50 rounded-xl
+            cursor-pointer">
+            <!-- input checkbox -->
+            <input type="checkbox" id="strategic"
+            class="absolute peer opacity-0"/>
+            <!-- heading -->
+            <label for="strategic"
+            class="tracking-wide mx-5 capitalize
+            h-[50px] flex items-center text-base md:text-lg lg:text-xl font-semibold
+            text-regal-blue cursor-pointer">
+              strategic location
+            </label>
+            <!-- arrow -->
+            <div class="absolute top-4 right-10
+            rotate-0 peer-checked:rotate-180
+            duration-700">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <!-- Content -->
+            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+              <p class="px-5 py-0 text-sm md:text-base tracking-wide leading-8">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              </p>
+            </div>
+          </article>
+          <!-- ARTICLE LOW -->
+          <article class="relative w-full bg-slate-50 rounded-xl
+            cursor-pointer">
+            <!-- input checkbox -->
+            <input type="checkbox" id="low"
+            class="absolute peer opacity-0"/>
+            <!-- heading -->
+            <label for="low"
+            class="tracking-wide mx-5 capitalize
+            h-[50px] flex items-center text-base md:text-lg lg:text-xl font-semibold
+            text-regal-blue cursor-pointer">
+              Low tax
+            </label>
+            <!-- arrow -->
+            <div class="absolute top-4 right-10
+            rotate-0 peer-checked:rotate-180
+            duration-700">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <!-- Content -->
+            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+              <p class="px-5 py-0 text-sm md:text-base tracking-wide leading-8">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </main>
