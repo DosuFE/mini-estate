@@ -38,26 +38,23 @@ function changeBackground (){
 changeBackground();
 
 
-// SELL & RENT TAB
-const about = document.querySelector(".about");
-const btns = document.querySelectorAll(".tab-btn");
-const articles = document.querySelectorAll(".content");
-about.addEventListener("click", function (e) {
-  const id = e.target.dataset.id;
-  if (id) {
-    // remove selected from other buttons
-    btns.forEach(function (btn) {
-      btn.classList.remove("active");
-    });
-    e.target.classList.add("active");
-    // hide other articles
-    articles.forEach(function (article) {
-      article.classList.remove("active");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active");
-  }
+// TAB MENU SCRIPT
+const tabs = document.querySelectorAll("#tabs a");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    // Remove active class from all tabs
+    tabs.forEach(t => t.classList.remove("active", "text-blue-800", "text-white", "bg-orange-500"));
+    this.classList.add("active", "text-white", "bg-orange-500");
+
+    // Hide all tab content
+    contents.forEach(content => content.classList.add("hidden"));
+
+    // Show the clicked tab's content
+    const target = document.querySelector(this.getAttribute("href"));
+    target.classList.remove("hidden");
+  });
 });
-
-
-// DREAM TEXT ACCORDION
