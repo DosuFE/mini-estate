@@ -17,6 +17,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
 </head>
 <body>
   <!-- HEADER -->
@@ -227,7 +233,7 @@
   <!-- NEWEST LISTING SECTION --> 
   <section class="mt-10 lg:px-8 lg:mt-20">
     <!-- NEWEST LISTING -->
-    <main>
+    <main id="listings">
       <!-- NEWEST LISTING FLEX -->
       <div class="px-3 py-2 flex items-center justify-between md:px-7
       lg:px-0">
@@ -436,7 +442,7 @@
 
   <!-- SECTION 2 FIND YOUR DREAM HOUSE -->
   <section class="mt-10 md:mt-20">
-    <main class="flex flex-col items-center justify-center 
+    <main id="dream" class="flex flex-col items-center justify-center 
     gap-7 lg:flex-row lg:px-6">
       <!-- YOUR DREAM HOUSE  -->
       <div class="px-4 flex flex-col items-center justify-center
@@ -622,7 +628,7 @@
 
   <!-- SECTION LISTING CATEGORIES -->
   <section class="mt-10 md:mt-20">
-    <main class="">
+    <main class="hover:text-orange-500">
       <div class="flex flex-col items-center justify-center gap-4
       sm:gap-6
       ">
@@ -675,7 +681,7 @@
         </li>
       </ul>
   
-      <!-- Tab Content -->
+      <!-- TAB CONTENT GRID -->
       <div class="pt-10">
         <!-- TAB ALL -->
         <div id="tab1" class="tab-content grid grid-cols-1 
@@ -729,11 +735,11 @@
           <!-- TAB ALL 2 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
           rounded-2xl">
-            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <!-- TAB 2 ELEMENT -->
             <div class="max-w-xs overflow-hidden rounded-xl">
               <a href="">
                 <img 
-                src="./images/Property-Listing-09.jpg"
+                src="./images/Property-Listing-12.jpg"
                 alt="" class="cursor-pointer object-cover
                 transition duration-[2s] hover:scale-125
                 rounded-2xl w-full  hover:brightness-75
@@ -742,11 +748,11 @@
             </div>
             <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
             font-medium">
-              Appointment
+              House
             </button>
-            <!-- GRAND FAMILY HOUSE TEXT -->
+            <!-- ELEMENT TEXT -->
             <h1 class="text-2xl font-semibold text-regal-blue py-2">
-              Grand family house
+              The Element
             </h1>
             <!-- GRAND FAMILY HOUSE LOCATION -->
             <div class="flex items-center gap-2">
@@ -774,11 +780,11 @@
           <!-- TAB ALL 3 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
           rounded-2xl">
-            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <!-- TAB TRIRAKASA IMAGE -->
             <div class="max-w-xs overflow-hidden rounded-xl">
               <a href="">
                 <img 
-                src="./images/Property-Listing-09.jpg"
+                src="./images/Property-Listing-04 (1).jpg"
                 alt="" class="cursor-pointer object-cover
                 transition duration-[2s] hover:scale-125
                 rounded-2xl w-full  hover:brightness-75
@@ -787,11 +793,11 @@
             </div>
             <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
             font-medium">
-              Appointment
+              House
             </button>
-            <!-- GRAND FAMILY HOUSE TEXT -->
+            <!-- TRIRAKASA TEXT -->
             <h1 class="text-2xl font-semibold text-regal-blue py-2">
-              Grand family house
+              Triraksa Village
             </h1>
             <!-- GRAND FAMILY HOUSE LOCATION -->
             <div class="flex items-center gap-2">
@@ -819,11 +825,11 @@
           <!-- TAB ALL 4 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
           rounded-2xl">
-            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <!-- TAB 4 NUVASA IMAGE -->
             <div class="max-w-xs overflow-hidden rounded-xl">
               <a href="">
                 <img 
-                src="./images/Property-Listing-09.jpg"
+                src="./images/Property-Listing.jpg"
                 alt="" class="cursor-pointer object-cover
                 transition duration-[2s] hover:scale-125
                 rounded-2xl w-full  hover:brightness-75
@@ -832,11 +838,11 @@
             </div>
             <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
             font-medium">
-              Appointment
+              Villa
             </button>
             <!-- GRAND FAMILY HOUSE TEXT -->
             <h1 class="text-2xl font-semibold text-regal-blue py-2">
-              Grand family house
+              Nuvasa Bay
             </h1>
             <!-- GRAND FAMILY HOUSE LOCATION -->
             <div class="flex items-center gap-2">
@@ -864,11 +870,11 @@
           <!-- TAB ALL 5 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
           rounded-2xl">
-            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <!-- TAB 5 LAVAYA -->
             <div class="max-w-xs overflow-hidden rounded-xl">
               <a href="">
                 <img 
-                src="./images/Property-Listing-09.jpg"
+                src="./images/property-element.jpg"
                 alt="" class="cursor-pointer object-cover
                 transition duration-[2s] hover:scale-125
                 rounded-2xl w-full  hover:brightness-75
@@ -877,13 +883,13 @@
             </div>
             <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
             font-medium">
-              Appointment
+              Villa
             </button>
-            <!-- GRAND FAMILY HOUSE TEXT -->
+            <!-- LAVAYA TEXT -->
             <h1 class="text-2xl font-semibold text-regal-blue py-2">
-              Grand family house
+              Lavaya Resort
             </h1>
-            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <!-- LAVAYA LOCATION -->
             <div class="flex items-center gap-2">
               <ion-icon name="location" class="text-teal-700"></ion-icon>
               <p class="text-[12px]  text-[#6D6D6D] font-semibold">
@@ -909,11 +915,11 @@
           <!-- TAB ALL 6 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
           rounded-2xl">
-            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <!-- TAB ONE PALM GARDEN IMAGE -->
             <div class="max-w-xs overflow-hidden rounded-xl">
               <a href="">
                 <img 
-                src="./images/Property-Listing-09.jpg"
+                src="./images/prop.jpg"
                 alt="" class="cursor-pointer object-cover
                 transition duration-[2s] hover:scale-125
                 rounded-2xl w-full  hover:brightness-75
@@ -924,11 +930,11 @@
             font-medium">
               Appointment
             </button>
-            <!-- GRAND FAMILY HOUSE TEXT -->
+            <!-- PALM GARDEN TEXT -->
             <h1 class="text-2xl font-semibold text-regal-blue py-2">
-              Grand family house
+              Palm Garden
             </h1>
-            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <!-- PALM GARDEN HOUSE LOCATION -->
             <div class="flex items-center gap-2">
               <ion-icon name="location" class="text-teal-700"></ion-icon>
               <p class="text-[12px]  text-[#6D6D6D] font-semibold">
@@ -953,108 +959,108 @@
 
           <!-- TAB ALL 7 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
-                    rounded-2xl">
-                      <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
-                      <div class="max-w-xs overflow-hidden rounded-xl">
-                        <a href="">
-                          <img 
-                          src="./images/Property-Listing-09.jpg"
-                          alt="" class="cursor-pointer object-cover
-                          transition duration-[2s] hover:scale-125
-                          rounded-2xl w-full  hover:brightness-75
-                          "/>
-                        </a>
-                      </div>
-                      <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
-                      font-medium">
-                        Appointment
-                      </button>
-                      <!-- GRAND FAMILY HOUSE TEXT -->
-                      <h1 class="text-2xl font-semibold text-regal-blue py-2">
-                        Grand family house
-                      </h1>
-                      <!-- GRAND FAMILY HOUSE LOCATION -->
-                      <div class="flex items-center gap-2">
-                        <ion-icon name="location" class="text-teal-700"></ion-icon>
-                        <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-                          Ohio St. South Gate, California
-                        </p>
-                      </div>
-                      <div class="flex items-center justify-between py-2">
-                        <!-- GRAND FAMILY HOUSE AMOUNT -->
-                        <p class="text-2xl text-regal-blue font-semibold ">
-                          $350
-                        </p>
+          rounded-2xl">
+            <!-- TAB 7 SOUTHGATE IMAGE -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing-19.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- SOUTHGATE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Southgate Resident
+            </h1>
+            <!-- SOUTHGATE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+                <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                  Ohio St. South Gate, California
+                </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
             
-                        <!-- GRAND FAMILY HOUSE RATINGS -->
-                        <div class="flex items-center gap-2">
-                          <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-                          <p class="text-xl text-regal-blue font-semibold ">
-                            4.8
-                          </p>
-                        </div>
-                      </div>
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
           </div>
 
           <!-- TAB ALL 8 -->
           <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
-                    rounded-2xl">
-                      <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
-                      <div class="max-w-xs overflow-hidden rounded-xl">
-                        <a href="">
-                          <img 
-                          src="./images/Property-Listing-09.jpg"
-                          alt="" class="cursor-pointer object-cover
-                          transition duration-[2s] hover:scale-125
-                          rounded-2xl w-full  hover:brightness-75
-                          "/>
-                        </a>
-                      </div>
-                      <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
-                      font-medium">
-                        Appointment
-                      </button>
-                      <!-- GRAND FAMILY HOUSE TEXT -->
-                      <h1 class="text-2xl font-semibold text-regal-blue py-2">
-                        Grand family house
-                      </h1>
-                      <!-- GRAND FAMILY HOUSE LOCATION -->
-                      <div class="flex items-center gap-2">
-                        <ion-icon name="location" class="text-teal-700"></ion-icon>
-                        <p class="text-[12px]  text-[#6D6D6D] font-semibold">
-                          Ohio St. South Gate, California
-                        </p>
-                      </div>
-                      <div class="flex items-center justify-between py-2">
-                        <!-- GRAND FAMILY HOUSE AMOUNT -->
-                        <p class="text-2xl text-regal-blue font-semibold ">
-                          $350
-                        </p>
+          rounded-2xl">
+            <!-- TAB 8 PINANG IMAGE -->
+            <div class="max-w-xs overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/slide-3.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- PINANG TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Pinang Residences
+            </h1>
+            <!-- PINANG LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+                <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                  Ohio St. South Gate, California
+                </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
             
-                        <!-- GRAND FAMILY HOUSE RATINGS -->
-                        <div class="flex items-center gap-2">
-                          <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
-                          <p class="text-xl text-regal-blue font-semibold ">
-                            4.8
-                          </p>
-                        </div>
-                      </div>
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- TAB HOUSE -->
+        <!-- TAB HOUSE CONTENT -->
         <div id="tab2" class="tab-content hidden">
           <div class="grid grid-cols-1 
           justify-items-center gap-y-8 px-10 sm:grid-cols-2
           lg:grid-cols-3">
-            <!-- TAB ALL 1 -->
+            <!-- TAB HOUSE 1 -->
             <div class="w-[90%] bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/slider-1.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1092,14 +1098,14 @@
               </div>
             </div>
 
-            <!-- TAB ALL 2 -->
+            <!-- TAB HOUSE 2 -->
             <div class="w-[90%] bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/slider-2.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1137,14 +1143,14 @@
               </div>
             </div>
 
-            <!-- TAB ALL 3 -->
+            <!-- TAB HOUSE 3 -->
             <div class="w-[90%] bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/Nuvasa-Bay.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1182,7 +1188,7 @@
               </div>
             </div>
 
-            <!-- TAB ALL 4 -->
+            <!-- TAB HOUSE 4 -->
             <div class="w-[90%] bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
@@ -1234,7 +1240,7 @@
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/tritraksa.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1320,11 +1326,11 @@
         </div>
 
         <!-- TAB VILLA -->
-        <div id="tab3" class="tab-content hidden">
+        <div id="tab3" class="tab-content hidden peer-checked:">
           <div class="grid grid-cols-1 
           gap-5 px-10 sm:grid-cols-2
           lg:grid-cols-4">
-            <!-- TAB ALL 1 -->
+            <!-- TAB VILLA 1 -->
             <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
@@ -1513,14 +1519,14 @@
           <div class="grid grid-cols-1 
           gap-5 px-10 sm:grid-cols-2
           lg:grid-cols-4">
-            <!-- TAB ALL 1 -->
+            <!-- TAB Apartment 1 -->
             <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/slider-2-thumb.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1558,14 +1564,14 @@
               </div>
             </div>
 
-            <!-- TAB ALL 2 -->
+            <!-- TAB Apartment 2 -->
             <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
             rounded-2xl">
               <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
               <div class="max-w-xs overflow-hidden rounded-xl">
                 <a href="">
                   <img 
-                  src="./images/Property-Listing-09.jpg"
+                  src="./images/slider-3-thumb.jpg"
                   alt="" class="cursor-pointer object-cover
                   transition duration-[2s] hover:scale-125
                   rounded-2xl w-full  hover:brightness-75
@@ -1698,9 +1704,145 @@
         </div>
       </div>
     </div>
-  
   </section>
+
+  <main class="mt-20 bg-slate-200 font-roboto">
+    <div class="py-10 flex flex-col items-center justify-center gap-4
+    sm:gap-6
+    ">
+      <p class="text-3xl text-center font-semibold max-w-3xl
+      capitalize sm:text-4xl md:text-5xl">
+      get luxury and cheap housing and guaranteed forever
+      </p>
+
+      <p class="text-[#6D6D6D] text-center px-2 text-lg md:max-w-2xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et.
+      </p>
+
+      <button type="button" class="text-white bg-orange-500
+        text-lg font-medium px-4 py-2 capitalize md:px-8 
+        rounded-md md:tracking-widest
+        ">
+          <a href="blog.html">
+            read more
+          </a>
+      </button>
+    </div>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-sea bg-center bg-cover bg-no-repeat w-full">
+    <div class="px-6 py-10 
+    space-y-5 
+    lg:py-20 lg:space-y-0 lg:flex lg:px-16 lg:justify-between
+    ">
+      <div  class="space-y-3">
+        <div>
+          <img src="./images/Logo_white.png" alt="logo"/>
+        </div>
+        <p class="text-white/60 text-xl max-w-96 capitalize">
+          Make your home more modern.We Help You Buy Or Sell Property Quickly
+        </p>
+        <p class="text-white/80 max-w-96">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend vestibulum 
+          semper malesuada tristique. Magna at arcu tincidunt felis elementum egestas.
+        </p>
+        <!-- <div class="hidden md:block md:space-x-4">
+          <a href="">
+            <ion-icon name="logo-facebook" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon name="logo-twitter" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon name="logo-instagram" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon name="logo-whatsapp" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon name="logo-linkedin" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+          <a href="mailto:">
+            <ion-icon name="mail-outline" class="text-xl text-white md:text-2xl"></ion-icon>
+          </a>
+        </div> -->
+      </div>
+
+      <!-- FOOTER NAVIGATION LINKS -->
+      <div class="flex gap-10 text-white md:gap-48 lg:gap-20">
+        <div>
+          <p class="text-2xl">SOLUTIONS</p>
+          <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
+            <li class="hover:text-orange-500">
+              <a href="#tabs">Get House</a>
+            </li>
+            <li class="hover:text-orange-500">
+              <a href="#dream">FAQ</a>
+            </li>
+            <li class="hover:text-orange-500">
+              <a href="#listings">View Detils</a>
+            </li>
+            <li class="hover:text-orange-500">
+              <a href="explore.html">Explore</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-2xl">QUICK LINKS</p>
+          <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
+            <li class="hover:text-orange-500"><a href="index.html">Home</a></li>
+            <li class="hover:text-orange-500"><a href="solution.html">About</a></li>
+            <li class="hover:text-orange-500"><a href="contact.html">Blog</a></li>
+            <li class="hover:text-orange-500"><a href="services.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <blockquote class="space-y-3">
+        <p class="text-2xl text-white">NEWSLETTER</p>
+
+        <div class="flex flex-col space-y-3">
+          <input type="email" name="email" placeholder="Your Email..."
+           class="w-full py-4 pl-4 pr-20 bg-transparent border-2 border-white/25
+           text-orange-500 rounded-md placeholder:text-xl
+           hover:border-orange-500 active:border-orange-500
+           hover:placeholder:text-orange-500" 
+          />
   
+          <a href="mailto:sulaimondosu988@gmail.com" class="w-full text-white 
+          bg-orange-500 py-1 px-4 text-lg rounded-md hover:bg-transparent 
+          hover:border-2 hover:border-orange-500">
+            SUBSCRIBE
+          </a>
+        </div>
+
+        <div class="space-x-4">
+          <a href="https://web.facebook.com/profile.php?id=100072728205710" target="_blank" class="">
+            <ion-icon name="logo-facebook" class="text-xl text-white hover:text-blue md:text-2xl"></ion-icon>
+          </a>
+          <a href="https://wa.link/oen6j2">
+            <ion-icon name="logo-whatsapp" class="text-xl text-white hover:text-green-500 md:text-2xl"></ion-icon>
+          </a>
+          <a href="mailto:sulaimondosu988@gmail.com">
+            <ion-icon name="mail-outline" class="text-xl text-white hover:text-red-500 md:text-2xl"></ion-icon>
+          </a>
+          <a href="https://t.me/Gbewato06" target="_blank">
+            <i class="fa-brands fa-telegram text-white text-xl md:text-2xl hover:text-sky"></i>
+          </a>
+        </div>
+      </blockquote>
+    </div>
+
+    <div class="bg-white w-full py-2 text-center">
+      <p class="text-sm font-medium capitalize">
+        Copyright &copy 2024 <span class="text-regal-blue">Dosu Sulaimon Gbewato</span>. All right reserved
+      </p>
+    </div>
+  </footer>
   <!-- SCRIPT LINK FUNCTION -->
   <script src="./JAVASCRIPT/script.js"></script>
 </body>

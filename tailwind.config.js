@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         'house': "url('./images/hero-house.jpg')",
         'property': "url('./images/Property-Listing-19.jpg')",
+        'sea': "url('./images/sea-house.png')",
       },
       // COLORS
       colors: {
