@@ -1,135 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Real Estate Management</title>
-        <!-- CSS LINKS -->
-        <link rel="stylesheet" href="output.css"/>
-        <!-- ICONIC ICONS LINKS -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- GOOGLE FONTS LINKS ROBOTO FLEX -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-        <!-- ANEK DEVANAGARI -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
-        <!-- FONT AWESOME ICONS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
-        />
-      </head>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" link="width=device-width, initial-scale=1.0">
+    <title>Real Estate Management</title>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="output.css"/>
+    <!-- ICONIC ICONS LINKS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- GOOGLE FONTS LINKS ROBOTO FLEX -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <!-- ANEK DEVANAGARI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
-  <header>
-    <!-- NAVIGATION BAR -->
-    <nav class="bg-slate-50 sticky top-0 shadow-md shadow-slate-500
-    px-5 py-2 w-full flex items-center justify-between z-50
-    md:py-4 lg:px-10 lg:py-5 xl:px-12
-    ">
-      <!-- ESTATE LOGO -->
-      <div>
-        <img src="./images/Logo.png" alt="Estate Logo"/>
-      </div>
-
-      <!-- MENU -->
-      <div class="font-roboto">
-        <!-- MOBILE ICON -->
-        <button class="transition-transform
-        hover:text-slate-700
-        lg:hidden" 
-        onclick="openNav()">
-          <ion-icon name="menu-outline" class="text-4xl"></ion-icon>
-        </button>
-          
-        <!-- NAVIGATION LINKS -->
-        <ul class="hidden lg:flex lg:items-center lg:gap-8 text-xl font-medium
-        xl:text-2xl">
-          <li class="hover:text-orange-700">
-            <a href="index.html">
-              Home
-            </a>
-          </li>
-
-          <li class="text-orange-500 hover:text-orange-700">
-            <a href="explore.html">Explore</a>
-          </li>
-
-          <li class="hover:text-orange-700">
-            <a href="agency.html">Agency</a>
-          </li>
-
-          <li class="hover:text-orange-700">
-            <a href="blog.html">Blog</a>
-          </li>
-
-          <li class="hover:text-orange-700">
-            <a href="about.html">About</a>
-          </li>
-
-          <li class="hover:text-orange-700">
-            <a href="contact.html">Contact</a>
-          </li>
-
-          <button class="bg-orange-500 px-7 py-2 rounded-md 
-          hover:duration-700
-          font-medium font-roboto hover:text-regal-blue hover:bg-slate-200
-          duration-1000 outline-none hover:border-2 
-          hover:border-orange-500">
-            Add Listing
-          </button>
-        </ul>
-      </div>
-            
-      <!-- MOBILE NAIGATION BAR -->
-      <div id="sideNav" class="depth-layer
-      bg-property bg-center bg-cover
-      bg-no-repeat z-50 brightness-100
-      fixed top-0 right-0 flex items-center 
-      w-0 h-full overlow-x-hidden font-bold text-black 
-      duration-1000">
-        <!-- CLOSE NAVIGATION MENU -->
-        <div class="absolute top-2 left-1 mx-4 mt-5">
-          <button class="text-white hover:text-slate-700">
-            <a href="javascript:void(0)" onclick="exitNav()">
-              <ion-icon name="close-outline" class="text-white text-5xl"></ion-icon>
-            </a>
-          </button>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="bg-slate-50 sticky top-0 shadow-md shadow-slate-500
+      px-5 scroll-py-3 w-full flex items-center justify-between z-50
+      md:py-4 lg:px-10 lg:py-5 xl:px-12
+      ">
+        <!-- ESTATE LOGO -->
+        <div>
+          <img src="./images/Logo.png" alt="Estate Logo"/>
         </div>
-        
-        <!-- MOBILE NAVIGATION LINKS -->
-        <nav class="ml-5 font-serif text-2xl font-medium  font-anek
-        sm:text-4xl">
-          <ul class="flex flex-col gap-5">
-            <li class="text-white hover:text-orange-700">
-              <a href="index.html" class="">Home</a>
-            </li>
-  
+
+        <!-- MENU -->
+        <div class="font-roboto">
+          <!-- MOBILE ICON -->
+          <button class="transition-transform
+          hover:text-slate-700
+          lg:hidden" 
+          onclick="openNav()">
+            <ion-icon name="menu-outline" class="text-4xl"></ion-icon>
+          </button>
+            
+          <!-- NAVIGATION LINKS -->
+          <ul class="hidden lg:flex lg:items-center lg:gap-8 text-xl font-medium
+          xl:text-2xl">
             <li class="hover:text-orange-700">
-              <a href="explore.html" class="text-orange-500">Explore</a>
+              <a href="index.html">
+                Home
+              </a>
             </li>
-  
-            <li class="hover:text-orange-700">
-              <a href="agency.html" class="text-white">Agency</a>
+
+            <li class="text-orange-500 hover:text-orange-700">
+              <a href="explore.html">Explore</a>
             </li>
-  
+
             <li class="hover:text-orange-700">
-              <a href="blog.html" class="text-white">Blog</a>
+              <a href="agency.html">Agency</a>
             </li>
-  
+
             <li class="hover:text-orange-700">
-              <a href="about.html" class="text-white">About</a>
+              <a href="blog.html">Blog</a>
             </li>
-  
+
             <li class="hover:text-orange-700">
-              <a href="contact.html" class="text-white">Contact</a>
+              <a href="about.html">About</a>
+            </li>
+
+            <li class="hover:text-orange-700">
+              <a href="contact.html">Contact</a>
             </li>
 
             <button class="bg-orange-500 px-7 py-2 rounded-md 
@@ -140,241 +84,1708 @@
               Add Listing
             </button>
           </ul>
-        </nav>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION HEADER -->
-    <main class="bg-props brightness-75 bg-explore-banner bg-cover bg-no-repeat 
-    bg-center">
-      <!-- HERO SECTION CONTENT -->
-      <div class="text-center 
-      pt-28 pb-20 md:pt-40 md:pb-36">
-        <!-- OUR PERFECT HOME -->
-        <h1 class="text-xl text-black tracking-wider
-        font-roboto font-medium uppercase md:text-5xl
-        lg:font-semibold lg:tracking-widest xl:text-6xl">
-          Discover your perfect home
-        </h1>
-
-        <p class="text-black/80 text-lg pt-2 font-anek 
-        tracking-widest md:pt-4 md:text-xl
-        ">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        </p>
-
-        <!-- FORM FOR SELLING AND RENTAGE -->
-        <form class="pt-5 font-Satoshi inline-block">
-          <!-- FORM CONTENT -->
-          <div class="bg-white opacity-80 flex flex-col items-center 
-          space-y-5 px-5 py-4 md:space-y-0
-          rounded-md md:flex-row md:space-x-4 lg:px-10 xl:px-16
-          xl:py-4
-          ">
-            <!-- SELLS CONTENT -->
-            <div class="flex flex-row items-center gap-2
-            md:flex-col md:items-start md:gap-2">
-              <label for="location" class="text-2xl font-semibold cursor-pointer">
-                Location:
-              </label>
-              <select name="country" id="location" class="text-xl
-              border-2 border-black rounded-md hover:border-slate-300" required="">
-                <option value="country">Indonesia</option>
-                <option value="country">Jakarta</option>
-                <option value="country">Jamaica</option>
-                <option value="country">New Zealand</option>
-              </select>
-            </div>
-
-            <!-- RENT CONTENT -->
-            <div class="flex flex-row items-center gap-12
-            md:flex-col md:gap-2 md:items-start
-            ">
-              <label for="type" class="text-2xl font-semibold cursor-pointer">
-                Type:
-              </label>
-              <select name="country" id="type" class="text-xl font-medium px-2
-              border-2 border-black rounded-md hover:border-slate-300" required="">
-                <option>Type 21/24</option>
-                <option>Type 23/34</option>
-                <option>Type 22/24</option>
-                <option>Type 21/24</option>
-              </select>
-            </div>
-
-            <!-- RANGE CONTENT -->
-            <div class="flex flex-row items-center gap-8
-            md:flex-col md:items-start md:gap-2
-            ">
-              <label for="range" class="text-2xl font-semibold cursor-pointer">
-                Range:
-              </label>
-              <select id="range" class="text-xl font-medium px-1
-              border-2 border-black rounded-md hover:border-slate-300" required="">
-                <option>$106 - $948</option>
-                <option>$106 - $948</option>
-                <option>$106 - $948</option>
-                <option>$106 - $948</option>
-              </select>
-            </div>
-
-            <button type="submit" class="bg-orange-500 w-full 
-            py-2 rounded-md text-3xl md:px-10 md:py-3
-            font-medium font-roboto hover:text-regal-blue 
-            hover:duration-700 hover:bg-slate-200
-            duration-1000 outline-none hover:border-2 
-            hover:border-orange-500 ">
-              Submit
+        </div>
+              
+        <!-- MOBILE NAIGATION BAR -->
+        <div id="sideNav" class="depth-layer
+        bg-property bg-center bg-cover
+        bg-no-repeat z-50 brightness-100
+        fixed top-0 right-0 flex items-center 
+        w-0 h-full overlow-x-hidden font-bold text-black 
+        duration-1000">
+          <!-- CLOSE NAVIGATION MENU -->
+          <div class="absolute top-2 left-1 mx-4 mt-5">
+            <button class="text-white hover:text-slate-700">
+              <a href="javascript:void(0)" onclick="exitNav()">
+                <ion-icon name="close-outline" class="text-white text-5xl"></ion-icon>
+              </a>
             </button>
           </div>
-        </form>
-      </div>
-    </main>
-  </header>
+          
+          <!-- MOBILE NAVIGATION LINKS -->
+          <nav class="ml-5 font-serif text-2xl font-medium  font-anek
+          sm:text-4xl">
+            <ul class="flex flex-col gap-5">
+              <li class="text-white hover:text-orange-700">
+                <a href="index.html" class="">Home</a>
+              </li>
+    
+              <li class="hover:text-orange-700">
+                <a href="explore.html" class="text-orange-500">Explore</a>
+              </li>
+    
+              <li class="hover:text-orange-700">
+                <a href="agency.html" class="text-white">Agency</a>
+              </li>
+    
+              <li class="hover:text-orange-700">
+                <a href="blog.html" class="text-white">Blog</a>
+              </li>
+    
+              <li class="hover:text-orange-700">
+                <a href="about.html" class="text-white">About</a>
+              </li>
+    
+              <li class="hover:text-orange-700">
+                <a href="contact.html" class="text-white">Contact</a>
+              </li>
 
-  <!-- SECTION ONE -->
-  <section class="mt-10 md:mt-20">
-    <main class="px-4 sm:px-8 md:px-12 lg:px-14">
-      <h1 class="text-xl text-regal-blue
-      font-medium tracking-wide md:font-semibold
-      md:text-3xl
-      ">
-        Result for “South Gate”
-      </h1>
-
-      <!-- DEFAULT ORDER SELECTION -->
-      <div class="flex items-center justify-between
-      ">
-        <p class="capitalize font-semibold text-sm
-        sm:text-lg">
-          Displaying 18 results 
-        </p>
-
-        <div class="flex items-center gap-x-2 sm:gap-x-3">
-          <!-- DEFAULT SECTION -->
-          <div class="text-regal-blue">
-            <label for="houses" class="font-semibold text-sm sm:text-base">
-              Sort By:
-            </label>
-            <select name="selection" id="houses"  class="font-semibold
-            outline-none border-none cursor-pointer text-sm sm:text-base">
-              <option value="default">
-                Default Order
-              </option>
-            </select>
-          </div>
-
-          <!-- MENU OPTION -->
-          <div class="flex items-center gap-x-2">
-            <ion-icon name="menu-outline" class="text-xl sm:text-2xl"></ion-icon>
-            <img src="./images/dashboard.png" alt="Dashboard Image" class="w-5 sm:w-6"/>
-          </div>
+              <button class="bg-orange-500 px-7 py-2 rounded-md 
+              hover:duration-700
+              font-medium font-roboto hover:text-regal-blue hover:bg-slate-200
+              duration-1000 outline-none hover:border-2 
+              hover:border-orange-500">
+                Add Listing
+              </button>
+            </ul>
+          </nav>
         </div>
-      </div>  
-    </main>
-  </section>
+      </nav>
 
-  <!-- SECTION TAB -->
-  
+      <!-- HERO SECTION HEADER -->
+      <main class="brightness-75 bg-explore-banner bg-cover bg-no-repeat 
+      bg-center">
+        <!-- HERO SECTION link -->
+        <div class="text-center 
+        pt-28 pb-20 md:pt-40 md:pb-36">
+          <!-- OUR PERFECT HOME -->
+          <h1 class="text-xl text-black tracking-wider
+          font-roboto font-medium uppercase md:text-5xl
+          lg:font-semibold lg:tracking-widest xl:text-6xl">
+            Discover your perfect home
+          </h1>
 
+          <p class="text-black/80 text-lg pt-2 font-anek 
+          tracking-widest md:pt-4 md:text-xl
+          ">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          </p>
 
+          <!-- FORM FOR SELLING AND RENTAGE -->
+          <form class="pt-5 font-Satoshi inline-block">
+            <!-- FORM link -->
+            <div class="bg-white opacity-80 flex flex-col items-center 
+            space-y-5 px-5 py-4 md:space-y-0
+            rounded-md md:flex-row md:space-x-4 lg:px-10 xl:px-16
+            xl:py-4
+            ">
+              <!-- SELLS link -->
+              <div class="flex flex-row items-center gap-2
+              md:flex-col md:items-start md:gap-2">
+                <label for="location" class="text-2xl font-semibold cursor-pointer">
+                  Location:
+                </label>
+                <select name="country" id="location" class="text-xl
+                border-2 border-black rounded-md hover:border-slate-300" required="">
+                  <option value="country">Indonesia</option>
+                  <option value="country">Jakarta</option>
+                  <option value="country">Jamaica</option>
+                  <option value="country">New Zealand</option>
+                </select>
+              </div>
 
+              <!-- RENT link -->
+              <div class="flex flex-row items-center gap-12
+              md:flex-col md:gap-2 md:items-start
+              ">
+                <label for="type" class="text-2xl font-semibold cursor-pointer">
+                  Type:
+                </label>
+                <select name="country" id="type" class="text-xl font-medium px-2
+                border-2 border-black rounded-md hover:border-slate-300" required="">
+                  <option>Type 21/24</option>
+                  <option>Type 23/34</option>
+                  <option>Type 22/24</option>
+                  <option>Type 21/24</option>
+                </select>
+              </div>
 
+              <!-- RANGE link -->
+              <div class="flex flex-row items-center gap-8
+              md:flex-col md:items-start md:gap-2
+              ">
+                <label for="range" class="text-2xl font-semibold cursor-pointer">
+                  Range:
+                </label>
+                <select id="range" class="text-xl font-medium px-1
+                border-2 border-black rounded-md hover:border-slate-300" required="">
+                  <option>$106 - $948</option>
+                  <option>$106 - $948</option>
+                  <option>$106 - $948</option>
+                  <option>$106 - $948</option>
+                </select>
+              </div>
 
-
-
-   <!-- FOOTER -->
-   <footer class="bg-sea bg-center bg-cover bg-no-repeat w-full">
-    <div class="px-6 py-10 
-    space-y-5 
-    lg:py-20 lg:space-y-0 lg:flex lg:px-16 lg:justify-between
-    ">
-      <div  class="space-y-3">
-        <div>
-          <img src="./images/Logo_white.png" alt="logo"/>
+              <button type="submit" class="bg-orange-500 w-full 
+              py-2 rounded-md text-3xl md:px-10 md:py-3
+              font-medium font-roboto hover:text-regal-blue 
+              hover:duration-700 hover:bg-slate-200
+              duration-1000 outline-none hover:border-2 
+              hover:border-orange-500 ">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
-        <p class="text-white/60 text-xl max-w-96 capitalize">
-          Make your home more modern.We Help You Buy Or Sell Property Quickly
-        </p>
-        <p class="text-white/80 max-w-96">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend vestibulum 
-          semper malesuada tristique. Magna at arcu tincidunt felis elementum egestas.
-        </p>
-      </div>
+      </main>
+    </header>   
 
-      <!-- FOOTER NAVIGATION LINKS -->
-      <div class="flex gap-10 text-white md:gap-48 lg:gap-20">
-        <div>
-          <p class="text-2xl">SOLUTIONS</p>
-          <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
-            <li class="hover:text-orange-500">
-              <a href="#tabs">Get House</a>
+    <!-- SECTION ONE -->
+    <section class="mt-10 md:mt-20">
+      <main class="px-4 sm:px-8 md:px-12 lg:px-14">
+        <h1 class="text-xl text-regal-blue
+        font-medium tracking-wide md:font-semibold
+        md:text-3xl
+        ">
+          Result for “South Gate”
+        </h1>
+
+        <!-- DEFAULT ORDER SELECTION -->
+        <div class="pt-5 flex items-center justify-between
+        ">
+          <p class="capitalize font-semibold text-sm
+          sm:text-lg">
+            Displaying 18 results 
+          </p>
+
+          <div class="flex items-center gap-x-2 sm:gap-x-3">
+            <!-- DEFAULT SECTION -->
+            <div class="text-regal-blue">
+              <label for="houses" class="font-semibold text-sm sm:text-base">
+                Sort By:
+              </label>
+              <select name="selection" id="houses"  class="font-semibold
+              outline-none border-none cursor-pointer text-sm sm:text-base">
+                <option value="default">
+                  Default Order
+                </option>
+              </select>
+            </div>
+
+            <!-- MENU OPTION -->
+            <div class="flex items-center gap-x-2">
+              <ion-icon name="menu-outline" class="text-xl sm:text-2xl"></ion-icon>
+              <img src="./images/dashboard.png" alt="Dashboard Image" class="w-5 sm:w-6"/>
+            </div>
+          </div>
+        </div>  
+
+        <div class="flex items-center justify-center gap-x-4">
+          <!-- Left Arrow -->
+          <button id="prev-tab" class="p-2 text-gray-500 hover:text-gray-800">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <ul class="flex flex-wrap" id="tab">
+            <li class="mr-1 flex-1 sm:flex-none">
+              <a class="block text-center sm:inline-block py-1 
+              px-5 font-semibold rounded-md
+              border border-orange-500 hover:bg-regal-blue hover:duration-1000
+              active"
+              href="#tab1">
+                1 
+              </a>
             </li>
-            <li class="hover:text-orange-500">
-              <a href="#dream">FAQ</a>
+            <li class="mr-1 flex-1 sm:flex-none">
+              <a class="block text-center sm:inline-block py-1 
+              px-5 font-semibold rounded-md
+              border border-orange-500 hover:bg-regal-blue hover:duration-1000
+              active"
+              href="#tab2">
+                2 
+              </a>
             </li>
-            <li class="hover:text-orange-500">
-              <a href="#listings">View Detils</a>
-            </li>
-            <li class="hover:text-orange-500">
-              <a href="explore.html">Explore</a>
+            <li class="mr-1 flex-1 sm:flex-none">
+              <a class="block text-center sm:inline-block py-1 
+              px-5 font-semibold rounded-md
+              border border-orange-500 hover:bg-regal-blue hover:duration-1000
+              active"
+              href="#tab3">
+                3
+              </a>
             </li>
           </ul>
+          <!-- Right Arrow -->
+          <button id="next-tab" class="p-2 text-gray-500 hover:text-gray-800">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
         </div>
 
-        <div>
-          <p class="text-2xl">QUICK LINKS</p>
-          <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
-            <li class="hover:text-orange-500"><a href="index.html">Home</a></li>
-            <li class="hover:text-orange-500"><a href="solution.html">About</a></li>
-            <li class="hover:text-orange-500"><a href="contact.html">Blog</a></li>
-            <li class="hover:text-orange-500"><a href="services.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <blockquote class="space-y-3">
-        <p class="text-2xl text-white">NEWSLETTER</p>
-
-        <div class="flex flex-col space-y-3">
-          <input type="email" name="email" placeholder="Your Email..."
-           class="w-full py-4 pl-4 pr-20 bg-transparent border-2 border-white/25
-           text-orange-500 rounded-md placeholder:text-xl
-           hover:border-orange-500 active:border-orange-500
-           hover:placeholder:text-orange-500" 
-          />
+        <!-- NUMBERS TAB -->
+        <div class="pt-5 pb-10">
+          <!-- ONE -->
+          <div id="tab1" class="tab-link grid grid-cols-2
+          justify-items-center gap-5 sm:px-10
+          lg:grid-cols-4">
+          <!-- TAB ALL 1 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing-09.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Appointment
+            </button>
+            <!-- GRAND FAMILY HOUSE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Grand family house
+            </h1>
+            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
   
-          <a href="mailto:sulaimondosu988@gmail.com" class="w-full text-white 
-          bg-orange-500 py-1 px-4 text-lg rounded-md hover:bg-transparent 
-          hover:border-2 hover:border-orange-500">
-            SUBSCRIBE
-          </a>
-        </div>
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div class="space-x-4">
-          <a href="https://web.facebook.com/profile.php?id=100072728205710" target="_blank" class="">
-            <ion-icon name="logo-facebook" class="text-xl text-white hover:text-blue md:text-2xl"></ion-icon>
-          </a>
-          <a href="https://wa.link/oen6j2">
-            <ion-icon name="logo-whatsapp" class="text-xl text-white hover:text-green-500 md:text-2xl"></ion-icon>
-          </a>
-          <a href="mailto:sulaimondosu988@gmail.com">
-            <ion-icon name="mail-outline" class="text-xl text-white hover:text-red-500 md:text-2xl"></ion-icon>
-          </a>
-          <a href="https://t.me/Gbewato06" target="_blank">
-            <i class="fa-brands fa-telegram text-white text-xl md:text-2xl hover:text-sky"></i>
-          </a>
-        </div>
-      </blockquote>
-    </div>
+          <!-- TAB ALL 2 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 2 ELEMENT -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing-12.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- ELEMENT TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              The Element
+            </h1>
+            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
 
-    <div class="bg-white w-full py-2 text-center">
-      <p class="text-sm font-medium capitalize">
-        Copyright &copy 2024 <span class="text-regal-blue">Dosu Sulaimon Gbewato</span>. All right reserved
-      </p>
-    </div>
-  </footer>
-  <!-- SCRIPT LINK FUNCTION -->
-  <script src="./JAVASCRIPT/script.js"></script>
-</body>
+          <!-- TAB ALL 3 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB TRIRAKASA IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing-04 (1).jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- TRIRAKASA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Triraksa Village
+            </h1>
+            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB ALL 4 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 4 NUVASA IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- GRAND FAMILY HOUSE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Nuvasa Bay
+            </h1>
+            <!-- GRAND FAMILY HOUSE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB ALL 5 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 5 LAVAYA -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/property-element.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- LAVAYA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Lavaya Resort
+            </h1>
+            <!-- LAVAYA LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB ALL 6 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB ONE PALM GARDEN IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/prop.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Appointment
+            </button>
+            <!-- PALM GARDEN TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Palm Garden
+            </h1>
+            <!-- PALM GARDEN HOUSE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB ALL 7 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 7 SOUTHGATE IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/Property-Listing-19.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- SOUTHGATE TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Southgate Resident
+            </h1>
+            <!-- SOUTHGATE LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+                <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                  Ohio St. South Gate, California
+                </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+            
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB ALL 8 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 8 PINANG IMAGE -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/slide-3.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              House
+            </button>
+            <!-- PINANG TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Pinang Residences
+            </h1>
+            <!-- PINANG LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+                <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                  Ohio St. South Gate, California
+                </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+            
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 5 LAVAYA -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/property-element.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- LAVAYA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Lavaya Resort
+            </h1>
+            <!-- LAVAYA LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 5 LAVAYA -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/property-element.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- LAVAYA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Lavaya Resort
+            </h1>
+            <!-- LAVAYA LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 5 LAVAYA -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/property-element.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- LAVAYA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Lavaya Resort
+            </h1>
+            <!-- LAVAYA LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+          rounded-2xl">
+            <!-- TAB 5 LAVAYA -->
+            <div class="overflow-hidden rounded-xl">
+              <a href="">
+                <img 
+                src="./images/property-element.jpg"
+                alt="" class="cursor-pointer object-cover
+                transition duration-[2s] hover:scale-125
+                rounded-2xl w-full  hover:brightness-75
+                "/>
+              </a>
+            </div>
+            <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+            font-medium">
+              Villa
+            </button>
+            <!-- LAVAYA TEXT -->
+            <h1 class="text-2xl font-semibold text-regal-blue py-2">
+              Lavaya Resort
+            </h1>
+            <!-- LAVAYA LOCATION -->
+            <div class="flex items-center gap-2">
+              <ion-icon name="location" class="text-teal-700"></ion-icon>
+              <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+              </p>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <!-- GRAND FAMILY HOUSE AMOUNT -->
+              <p class="text-2xl text-regal-blue font-semibold ">
+                $350
+              </p>
+  
+              <!-- GRAND FAMILY HOUSE RATINGS -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                <p class="text-xl text-regal-blue font-semibold ">
+                  4.8
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+    
+          <!-- TWO -->
+          <div id="tab2" class="tab-link hidden">
+            <div class="grid grid-cols-2
+            justify-items-center gap-x-4 sm:px-10 
+            lg:grid-cols-3">
+              <!-- TAB HOUSE 1 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/slider-1.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB HOUSE 2 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/slider-2.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB HOUSE 3 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/Nuvasa-Bay.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB HOUSE 4 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/Property-Listing-09.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB ALL 5 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/tritraksa.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB ALL 6 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/Property-Listing-09.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/slider-1.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB HOUSE 2 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/slider-2.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB HOUSE 3 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25 p-5
+              rounded-2xl">
+                <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                <div class="overflow-hidden rounded-xl">
+                  <a href="">
+                    <img 
+                    src="./images/Nuvasa-Bay.jpg"
+                    alt="" class="cursor-pointer object-cover
+                    transition duration-[2s] hover:scale-125
+                    rounded-2xl w-full  hover:brightness-75
+                    "/>
+                  </a>
+                </div>
+                <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                font-medium">
+                  Appointment
+                </button>
+                <!-- GRAND FAMILY HOUSE TEXT -->
+                <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                  Grand family house
+                </h1>
+                <!-- GRAND FAMILY HOUSE LOCATION -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="location" class="text-teal-700"></ion-icon>
+                  <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                    Ohio St. South Gate, California
+                  </p>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <!-- GRAND FAMILY HOUSE AMOUNT -->
+                  <p class="text-2xl text-regal-blue font-semibold ">
+                    $350
+                  </p>
+
+                  <!-- GRAND FAMILY HOUSE RATINGS -->
+                  <div class="flex items-center gap-2">
+                    <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                    <p class="text-xl text-regal-blue font-semibold ">
+                      4.8
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- THREE -->
+          <div id="tab3" class="tab-link hidden peer-checked:">
+            <div class="grid 
+            gap-5 sm:px-10 grid-cols-2
+            lg:grid-cols-4">
+              <!-- TAB VILLA 1 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-09.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                    font-medium">
+                      Appointment
+                    </button>
+                    <!-- GRAND FAMILY HOUSE TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Grand family house
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <!-- GRAND FAMILY HOUSE AMOUNT -->
+                      <p class="text-2xl text-regal-blue font-semibold ">
+                        $350
+                      </p>
+          
+                      <!-- GRAND FAMILY HOUSE RATINGS -->
+                      <div class="flex items-center gap-2">
+                        <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                        <p class="text-xl text-regal-blue font-semibold ">
+                          4.8
+                        </p>
+                      </div>
+                    </div>
+              </div>
+
+              <!-- TAB ALL 2 -->
+              <div class="w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-09.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                    font-medium">
+                      Appointment
+                    </button>
+                    <!-- GRAND FAMILY HOUSE TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Grand family house
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <!-- GRAND FAMILY HOUSE AMOUNT -->
+                      <p class="text-2xl text-regal-blue font-semibold ">
+                        $350
+                      </p>
+          
+                      <!-- GRAND FAMILY HOUSE RATINGS -->
+                      <div class="flex items-center gap-2">
+                        <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                        <p class="text-xl text-regal-blue font-semibold ">
+                          4.8
+                        </p>
+                      </div>
+                    </div>
+              </div>
+
+              <!-- TAB ALL 3 -->
+              <div class="w-w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-09.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                    font-medium">
+                      Appointment
+                    </button>
+                    <!-- GRAND FAMILY HOUSE TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Grand family house
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <!-- GRAND FAMILY HOUSE AMOUNT -->
+                      <p class="text-2xl text-regal-blue font-semibold ">
+                        $350
+                      </p>
+          
+                      <!-- GRAND FAMILY HOUSE RATINGS -->
+                      <div class="flex items-center gap-2">
+                        <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                        <p class="text-xl text-regal-blue font-semibold ">
+                          4.8
+                        </p>
+                      </div>
+                    </div>
+              </div>
+
+              <!-- TAB ALL 4 -->
+              <div class="w-w-full bg-slate-50 shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-09.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 text-teal-500 rounded-md
+                    font-medium">
+                      Appointment
+                    </button>
+                    <!-- GRAND FAMILY HOUSE TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Grand family house
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <!-- GRAND FAMILY HOUSE AMOUNT -->
+                      <p class="text-2xl text-regal-blue font-semibold ">
+                        $350
+                      </p>
+          
+                      <!-- GRAND FAMILY HOUSE RATINGS -->
+                      <div class="flex items-center gap-2">
+                        <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                        <p class="text-xl text-regal-blue font-semibold ">
+                          4.8
+                        </p>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="w-full bg-slate-50 shadow-md 
+                  shadow-black/25  inline-block p-5
+                  rounded-2xl">
+              <!-- TAB ONE GRAND FAMILY HOUSE IMAGE -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="">
+                  <img 
+                  src="./images/Property-Listing-09.jpg"
+                  alt="" class="cursor-pointer object-cover
+                  transition duration-[2s] hover:scale-125
+                  rounded-2xl w-full  hover:brightness-75
+                  "/>
+                </a>
+              </div>
+              <button class="mt-4 bg-[#DEF8ED] px-5 py-1 
+              text-teal-500 rounded-md
+              font-medium">
+                Appointment
+              </button>
+              <!-- GRAND FAMILY HOUSE TEXT -->
+              <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                Grand family house
+              </h1>
+              <!-- GRAND FAMILY HOUSE LOCATION -->
+              <div class="flex items-center gap-2">
+                <ion-icon name="location" class="text-teal-700"></ion-icon>
+                <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                Ohio St. South Gate, California
+                </p>
+              </div>
+              <div class="flex items-center justify-between py-2">
+                <!-- GRAND FAMILY HOUSE AMOUNT -->
+                <p class="text-2xl text-regal-blue font-semibold ">
+                  $350
+                </p>
+        
+                <!-- GRAND FAMILY HOUSE RATINGS -->
+                <div class="flex items-center gap-2">
+                  <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                  <p class="text-xl text-regal-blue font-semibold ">
+                    4.8
+                  </p>
+                </div>
+              </div>
+              </div>
+      
+              <!-- TAB ALL 2 -->
+              <div class="w-full bg-slate-50 
+                  shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB 2 ELEMENT -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-12.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 
+                    text-teal-500 rounded-md
+                    font-medium">
+                      House
+                    </button>
+                    <!-- ELEMENT TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      The Element
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                  <div class="flex items-center justify-between py-2">
+                    <!-- GRAND FAMILY HOUSE AMOUNT -->
+                    <p class="text-2xl text-regal-blue font-semibold ">
+                      $350
+                    </p>
+              
+                    <!-- GRAND FAMILY HOUSE RATINGS -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                      <p class="text-xl text-regal-blue font-semibold ">
+                        4.8
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            
+              <!-- TAB ALL 3 -->
+              <div class="w-full bg-slate-50 
+                  shadow-md shadow-black/25  inline-block p-5
+                  rounded-2xl">
+                    <!-- TAB TRIRAKASA IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing-04 (1).jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 
+                    text-teal-500 rounded-md
+                    font-medium">
+                      House
+                    </button>
+                    <!-- TRIRAKASA TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Triraksa Village
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                  <div class="flex items-center justify-between py-2">
+                    <!-- GRAND FAMILY HOUSE AMOUNT -->
+                    <p class="text-2xl text-regal-blue font-semibold ">
+                      $350
+                    </p>
+                
+                    <!-- GRAND FAMILY HOUSE RATINGS -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                      <p class="text-xl text-regal-blue font-semibold ">
+                        4.8
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              
+              <!-- TAB ALL 4 -->
+              <div class="w-full bg-slate-50 
+              shadow-md shadow-black/25  inline-block p-5
+              rounded-2xl">
+              <!-- TAB 4 NUVASA IMAGE -->
+                    <div class="overflow-hidden rounded-xl">
+                      <a href="">
+                        <img 
+                        src="./images/Property-Listing.jpg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        rounded-2xl w-full  hover:brightness-75
+                        "/>
+                      </a>
+                    </div>
+                    <button class="mt-4 bg-[#DEF8ED] px-5 py-1 
+                    text-teal-500 rounded-md
+                    font-medium">
+                      Villa
+                    </button>
+                    <!-- GRAND FAMILY HOUSE TEXT -->
+                    <h1 class="text-2xl font-semibold text-regal-blue py-2">
+                      Nuvasa Bay
+                    </h1>
+                    <!-- GRAND FAMILY HOUSE LOCATION -->
+                    <div class="flex items-center gap-2">
+                      <ion-icon name="location" class="text-teal-700"></ion-icon>
+                      <p class="text-[12px]  text-[#6D6D6D] font-semibold">
+                        Ohio St. South Gate, California
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <!-- GRAND FAMILY HOUSE AMOUNT -->
+                      <p class="text-2xl text-regal-blue font-semibold ">
+                        $350
+                      </p>
+                  
+                      <!-- GRAND FAMILY HOUSE RATINGS -->
+                      <div class="flex items-center gap-2">
+                        <ion-icon name="star" class="text-xl text-yellow-500"></ion-icon>
+                        <p class="text-xl text-regal-blue font-semibold ">
+                          4.8
+                        </p>
+                      </div>
+                    </div>
+              </div>     
+              </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-sea bg-center bg-cover bg-no-repeat w-full">
+      <div class="px-6 py-10 
+      space-y-5 
+      lg:py-20 lg:space-y-0 lg:flex lg:px-16 lg:justify-between
+      ">
+        <div  class="space-y-3">
+          <div>
+            <img src="./images/Logo_white.png" alt="logo"/>
+          </div>
+          <p class="text-white/60 text-xl max-w-96 capitalize">
+            Make your home more modern.We Help You Buy Or Sell Property Quickly
+          </p>
+          <p class="text-white/80 max-w-96">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend vestibulum 
+            semper malesuada tristique. Magna at arcu tincidunt felis elementum egestas.
+          </p>
+        </div>
+  
+        <!-- FOOTER NAVIGATION LINKS -->
+        <div class="flex gap-10 text-white md:gap-48 lg:gap-20">
+          <div>
+            <p class="text-2xl">SOLUTIONS</p>
+            <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
+              <li class="hover:text-orange-500">
+                <a href="#tabs">Get House</a>
+              </li>
+              <li class="hover:text-orange-500">
+                <a href="#dream">FAQ</a>
+              </li>
+              <li class="hover:text-orange-500">
+                <a href="#listings">View Detils</a>
+              </li>
+              <li class="hover:text-orange-500">
+                <a href="explore.html">Explore</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <p class="text-2xl">QUICK LINKS</p>
+            <ul class="px-5 pt-4 flex flex-col gap-y-3 list-disc">
+              <li class="hover:text-orange-500"><a href="index.html">Home</a></li>
+              <li class="hover:text-orange-500"><a href="solution.html">About</a></li>
+              <li class="hover:text-orange-500"><a href="contact.html">Blog</a></li>
+              <li class="hover:text-orange-500"><a href="services.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <blockquote class="space-y-3">
+          <p class="text-2xl text-white">NEWSLETTER</p>
+  
+          <div class="flex flex-col space-y-3">
+            <input type="email" name="email" placeholder="Your Email..."
+            class="w-full py-2 pl-4 pr-20 bg-transparent border-2 border-white/25
+            text-orange-500 rounded-md placeholder:text-xl
+            hover:border-orange-500 active:border-orange-500
+            hover:placeholder:text-orange-500" 
+            />
+    
+            <a href="mailto:sulaimondosu988@gmail.com" class="w-full text-white 
+            bg-orange-500 py-2 px-4 text-lg rounded-md hover:bg-transparent 
+            hover:border-2 hover:border-orange-500">
+              SUBSCRIBE
+            </a>
+          </div>
+  
+          <div class="space-x-4">
+            <a href="https://web.facebook.com/profile.php?id=100072728205710" target="_blank" class="">
+              <ion-icon name="logo-facebook" class="text-xl text-white hover:text-blue md:text-2xl"></ion-icon>
+            </a>
+            <a href="https://wa.link/oen6j2">
+              <ion-icon name="logo-whatsapp" class="text-xl text-white hover:text-green-500 md:text-2xl"></ion-icon>
+            </a>
+            <a href="mailto:sulaimondosu988@gmail.com">
+              <ion-icon name="mail-outline" class="text-xl text-white hover:text-red-500 md:text-2xl"></ion-icon>
+            </a>
+            <a href="https://t.me/Gbewato06" target="_blank">
+              <i class="fa-brands fa-telegram text-white text-xl md:text-2xl hover:text-sky"></i>
+            </a>
+          </div>
+        </blockquote>
+      </div>
+  
+      <div class="bg-white w-full py-2 text-center">
+        <p class="text-sm font-medium capitalize">
+          Copyright &copy 2024 <span class="text-regal-blue">Dosu Sulaimon Gbewato</span>. All right reserved
+        </p>
+      </div>
+    </footer>
+    <!-- SCRIPT LINK FUNCTION -->
+    <script src="./JAVASCRIPT/script.js"></script>
+  </body>
+  </html>
+
+    <!-- SCRIPT TAG -->
+    <script>
+      const tab = document.querySelectorAll("#tab a");
+      const links = document.querySelectorAll(".tab-link");
+      let currentTab = 0;
+
+      // Arrow function to show the active tab
+      const showTab = (index) => {
+        tab.forEach((tab) => tab.classList.remove("active", "text-white", "bg-orange-500"));
+        links.forEach((link) => link.classList.add("hidden"));
+
+        tab[index].classList.add("active", "text-white", "bg-orange-500");
+        links[index].classList.remove("hidden");
+      };
+
+      // Initial display
+      showTab(currentTab);
+
+      // Left Arrow (Previous Tab)
+      document.getElementById("prev-tab").addEventListener("click", () => {
+        currentTab = (currentTab > 0) ? currentTab - 1 : tab.length - 1;
+        showTab(currentTab);
+      });
+
+      // Right Arrow (Next Tab)
+      document.getElementById("next-tab").addEventListener("click", () => {
+        currentTab = (currentTab < tab.length - 1) ? currentTab + 1 : 0;
+        showTab(currentTab);
+      });
+
+      // Tab Click Event
+      tab.forEach((tab, index) => {
+        tab.addEventListener("click", (event) => {
+          event.preventDefault();
+          currentTab = index;
+          showTab(currentTab);
+        });
+      });
+    </script>
+
+
+
+    <!-- SCRIPT LINK FUNCTION -->
+    <script src="./JAVASCRIPT/script.js"></script>
+  </body>
 </html>

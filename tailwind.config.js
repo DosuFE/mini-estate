@@ -14,6 +14,7 @@ module.exports = {
         'property': "url('./images/Property-Listing-19.jpg')",
         'sea': "url('./images/sea-house.png')",
         'explore-banner': "url('./images/hero-house3.jpg')",
+        'hotel': "url('./images/hotel-house.png')",
       },
       // COLORS
       colors: {
